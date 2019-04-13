@@ -628,11 +628,6 @@ article.second .right .step {
 }
 
 @media only screen and (max-width: 450px) {
-	nav {
-		padding-left: 15px;
-		padding-right: 15px;
-	}
-
 	.nav-right {
 		margin-right: 0;
 	}
