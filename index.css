@@ -1,5 +1,6 @@
 body {
 	margin: 0;
+	background: #121134;
 }
 
 section {
@@ -19,6 +20,7 @@ section * {
 header, article {
 	width: 1330px;
 	margin: 0 auto;
+	background: #121134;
 }
 
 nav {
@@ -583,10 +585,6 @@ article.second .right .step {
     	margin-right: 0;
     }
 
-    article.first .right {
-    	margin-bottom: -450px;
-    }
-
 	article.first .right img {
 		top: 30%;
 		left: 50%;
@@ -595,7 +593,11 @@ article.second .right .step {
     }
 
     section.second {
-    	height: 130vh;
+    	height: 900px;
+    }
+
+    article.second {
+    	height: 700px;
     }
 
 	article.second .right .step {
@@ -618,8 +620,8 @@ article.second .right .step {
 		text-decoration: underline;
 	}
 
-	article.first .right {
-		margin-bottom: -150px;
+    article.second {
+    	height: 900px;
     }
 
     section.second .title {
@@ -627,12 +629,21 @@ article.second .right .step {
     }
 }
 
-@media only screen and (max-width: 450px) {
+@media only screen and (max-width: 480px) {
 	.nav-right {
 		margin-right: 0;
 	}
 
-	section.second {
-		height: 150vh;
+	article.first .right {
+		height: 300px;
 	}
+
+
+	article.first .right img {
+		top: 50%;
+    }
+
+	article.second {
+    	height: 700px;
+    }
 }
