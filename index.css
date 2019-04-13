@@ -530,6 +530,10 @@ article.second .right .step {
     	top: 40vh;
     }
 
+    section.second {
+    	height: 100vh;
+    }
+
     section.second .left {
     	display: none;
     }   
@@ -556,12 +560,13 @@ article.second .right .step {
 		width: 100%;
 	}
 
-	.relative-nav > a {
-		display: none;
+	nav {
+		padding-left: 15px;
+		padding-right: 15px;
 	}
 
-	.nav-right {
-		margin-right: 45px;
+	.relative-nav > a {
+		display: none;
 	}
 
 	.open-nav {
@@ -587,6 +592,10 @@ article.second .right .step {
 		left: 50%;
 		transform: translate(-50%, -50%);
 		width: 90%;
+    }
+
+    section.second {
+    	height: 130vh;
     }
 
 	article.second .right .step {
