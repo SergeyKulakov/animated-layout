@@ -106,7 +106,6 @@
 						const transX = 2*tilt.tx/this.win.width*mousepos.x - tilt.tx;
 						const transY = 2*tilt.ty/this.win.height*mousepos.y - tilt.ty;
 
-//						this.DOM.el.style.transform = `translate3d(${transX}px, ${transY}px,0) rotate3d(0,0,1,${rotZ}deg) scale3d(${scaleX},${scaleY},1)`;
 						this.DOM.el.style.transform = `translate3d(${transX}px, ${transY}px,0) rotate3d(0,0,1,${2*rotZ}deg)`;
 					}
 				});
