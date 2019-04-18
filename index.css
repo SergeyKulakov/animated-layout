@@ -633,7 +633,7 @@ article.second .right .step {
     	height: 100vh;
     }
 
-	.nav-right a, .btn-book-demo {
+	.nav-right a, nav .btn-book-demo {
 		display: none;       
 	}
 
