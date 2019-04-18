@@ -53,16 +53,14 @@ $(document).ready(function($) {
 			    $('#step3').find('.about').css("color", "#2CDCEB");
 			    percent3 = circle3Pos - topOfWindow - $('#step3').height()*4;
 			    percent3 = Math.abs(percent3);
-			    if (percent3 > 58) {
-                	animationThird = 0;
-                }
 			}
 
-			console.log(Math.abs(percent3));
+			console.log(topOfWindow + $(window).height() + $('#step3').height() - 350 > $('section.second').height());
 
 			if (topOfWindow + $(window).height() + $('#step3').height() - 350 > $('section.second').height()) {
 				$('#step1').css("opacity", "0");
-				percent3 = 100;     		
+				percent3 = 100; 
+				animationThird = 0;    		
 			}
 	    $('#step1').css("margin-top", ((20 - ((topOfWindow + $(window).height() - 30)/1000)*7)*2)-15 + 'vh');
     }
