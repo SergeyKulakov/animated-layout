@@ -54,8 +54,8 @@ $(document).ready(function($) {
 			    percent3 = Math.abs(percent3);
 			}
 
-			if (circle3Pos < topOfWindow + $(window).height() + $('#step3').height() - 600) {
-				animationThird = 0;
+			if (topOfWindow + $(window).height() + $('#step3').height() - 350 < $('section.second').height()) {
+				animationThird = 1200; 
 			}
 
 			if (topOfWindow + $(window).height() + $('#step3').height() - 350 > $('section.second').height()) {
