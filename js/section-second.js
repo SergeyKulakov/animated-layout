@@ -3,7 +3,6 @@ $(document).ready(function($) {
     $('.progressbar').each(function() {
 		var elementProgressbarPos = $('.progressbar').offset().top;
 		var topOfWindow = $(window).scrollTop();
-//		var sectionSecond = $('section.second').height();
 		var circle1Pos = $('#circle1').offset().top;
 		var circle2Pos = circle1Pos + $('#step2').height();
 		var circle3Pos = circle2Pos + $('#step3').height();
@@ -45,7 +44,7 @@ $(document).ready(function($) {
                 animationFirst = 0;
 			}
 
-			if (circle3Pos < topOfWindow + $(window).height() + $('#step3').height() - 550) {
+			if (circle3Pos < topOfWindow + $(window).height() + $('#step3').height() - 450) {
 				$('#step1').css("opacity", "0.05");
 				$('#step2').css("opacity", "0.3");
 			    $('.right').find('.about').css("color", "#FC6E3A");
@@ -55,7 +54,9 @@ $(document).ready(function($) {
 			    percent3 = Math.abs(percent3);
 			}
 
-			console.log(topOfWindow + $(window).height() + $('#step3').height() - 350 > $('section.second').height());
+			if (circle3Pos < topOfWindow + $(window).height() + $('#step3').height() - 600) {
+				animationThird = 0;
+			}
 
 			if (topOfWindow + $(window).height() + $('#step3').height() - 350 > $('section.second').height()) {
 				$('#step1').css("opacity", "0");
